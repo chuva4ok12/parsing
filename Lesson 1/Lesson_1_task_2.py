@@ -7,7 +7,7 @@ import vk_api
 import json
 
 
-session = vk_api.VkApi(token='')
+session = vk_api.VkApi(token='vk1.a.CsRzpdEv8GFxTbGwwVzjTM86mwmwy5UMG5yUpm75V49sjWDYrN9njYOdtmsD-fb_F6BXP4Y3TVyn1o6eT-kePEK2NKAZ4JHMvpTmstMRHw_ixYsVXxH5o0-MmXjJzllysj3LWJN0xq2GN2632AaIkBHey6PWpJMHUEaoEcb8EM9pD6CffbZXMg_dKcEBW9CivvxCC2t_dIivUmAzxvq1Vw')
 
 
 def get_friends_status(user_id):
@@ -18,7 +18,7 @@ def get_friends_status(user_id):
         info.append(user[0]['first_name'] + ' ' + user[0]['last_name'])
         print(f"{user[0]['first_name']} {user[0]['last_name']}")
         filename = 'info.json'
-        with open(filename, 'w') as f:
+        with open(filename, 'w', encoding='utf-8') as f:
             json.dump(info, f)
     print(info)
 

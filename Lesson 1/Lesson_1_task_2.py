@@ -7,7 +7,7 @@ import vk_api
 import json
 
 
-session = vk_api.VkApi(token='vk1.a.CsRzpdEv8GFxTbGwwVzjTM86mwmwy5UMG5yUpm75V49sjWDYrN9njYOdtmsD-fb_F6BXP4Y3TVyn1o6eT-kePEK2NKAZ4JHMvpTmstMRHw_ixYsVXxH5o0-MmXjJzllysj3LWJN0xq2GN2632AaIkBHey6PWpJMHUEaoEcb8EM9pD6CffbZXMg_dKcEBW9CivvxCC2t_dIivUmAzxvq1Vw')
+session = vk_api.VkApi(token='')
 
 
 def get_friends_status(user_id):

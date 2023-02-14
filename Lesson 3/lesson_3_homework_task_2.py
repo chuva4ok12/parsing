@@ -6,7 +6,7 @@ from pymongo import MongoClient
 client = MongoClient('127.0.0.1', 27017)
 db = client['vacancies_info']
 vacancy = db.vacancy
-
+print(vacancy)
 
 def search(value):
     for item in vacancy.find({}):
@@ -52,6 +52,5 @@ def search(value):
                 if value*6.2 < item['salary']['maximum']:
                     print(item)
 
-
-search(100000)
-
+search(50000)
+print()

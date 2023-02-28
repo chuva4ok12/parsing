@@ -18,7 +18,7 @@ def get_friends_status(user_id):
         info.append(user[0]['first_name'] + ' ' + user[0]['last_name'])
         print(f"{user[0]['first_name']} {user[0]['last_name']}")
         filename = 'info.json'
-        with open(filename, 'w') as f:
+        with open(filename, 'w', encoding='utf-8') as f:
             json.dump(info, f)
     print(info)
 
